@@ -5,32 +5,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Collapsible sidebar</title>
-
+    <title>Golden Craft</title>
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Slick css -->
+    <link rel="stylesheet" href="./slick.css">
+    <link rel="stylesheet" href="./slick-theme.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-
     <!-- Font Awesome JS -->
     <script src="https://kit.fontawesome.com/90113be503.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-<div class="d-flex justify-content-center m-3"><img src="./logo.png" alt=""></div>
+    <!-- logo -->
+    <div class="d-flex justify-content-center m-3"><img src="./logo.png" alt=""></div>
 
-    <div class="wrapper">
+    <!-- Home -->
+    <div class="wrapper ">
         <!-- Sidebar  -->
-        <nav id="sidebar">
+        <nav id="sidebar" class="mb-3">
             <div class="sidebar-header">
                 <h3>Categories</h3>
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Bed sheet</a>
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Bed
+                        sheet</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
                             <a href="#"> type 1</a>
@@ -44,10 +47,11 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Bed Cover</a>
+                    <a href="#">Hand Made</a>
                 </li>
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Baby items</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Baby
+                        items</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
                             <a href="#">type 1</a>
@@ -67,13 +71,14 @@
                     <a href="#">Ferbrics</a>
                 </li>
                 <li>
-                    <a href="#">Sleeping pillow </a>
+                    <a href="#">Kitchen Febrics</a>
                 </li>
                 <li>
-                    <a href="#">Ferbrics</a>
+                    <a href="#">Demo</a>
                 </li>
                 <li>
-                    <a href="#Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Demo items</a>
+                    <a href="#Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Demo
+                        items</a>
                     <ul class="collapse list-unstyled" id="Submenu">
                         <li>
                             <a href="#">type 1</a>
@@ -89,22 +94,24 @@
             </ul>
         </nav>
 
-        <!-- Page Content  -->
+        <!-- banner Content  -->
         <div id="content">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <div class="container-fluid">
 
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <button type="button" id="sidebarCollapse" class="btn btn-warning">
                         <i class="fas fa-align-left"></i>
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="btn btn-warning d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item">
@@ -128,58 +135,427 @@
             </nav>
 
 
-            <div class="p-md-5">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="p-3">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleFade" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img style="height: 350px; width: 100%;" src="./56_dsbh-2i.jpg" class="d-block " alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img style="height: 350px; width: 100%;" src="./81V1rXc54ZL._SL1200_.jpg" class="d-block " alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img style="height: 350px; width: 100%;" src="./si0301-copy-574993_l.jpg" class="d-block " alt="...">
-                      </div>
+                        <div class="carousel-item active">
+                            <img style="height: 85vh; width: 100%;" src="./images/home5.jpg"
+                                class="d-block " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img style="height: 85vh; width: 100%;" src="./images/home6.jpg" class="d-block "
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img style="height: 85vh; width: 100%;" src="./images/home1.jpg"
+                                class="d-block " alt="...">
+                        </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
+                    <!-- <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-
-                  <div class="row">
-                      <div class="col-md-4"><img class="w-100" src="./curtain.jpg" alt=""></div>
-                      <div class="col-md-4"><img class="w-100" src="./curtain.jpg" alt=""></div>
-                      <div class="col-md-4"><img class="w-100" src="./curtain.jpg" alt=""></div>
-                  </div>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a> -->
+                </div>
             </div>
-            
+
         </div>
     </div>
     <hr>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- Three boxes -->
+    <section class="px-md-5 px-3">
+        <div class="row ">
+            <div class="col-md-4 p-3">
+                <div class="threeBoxes">
+                    <p>Home Decor</p>
+                    <img src="./images/HomeDecor.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="threeBoxes">
+                    <p>Living Decor</p>
+                    <img src="./images/living.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="threeBoxes">
+                    <p>Hand Made</p>
+                    <img src="./images/handMade.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Featued -->
+    <section class=" my-5 px-md-5 px-3">
+        <h3 style="border-bottom: 1px solid  lightgray;">Featured</h3>
+
+            <div class="py-1 ">
+              <div class="featured">
+                <div class="box-border">
+                    <img src="./images/featured/Topfeature.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/featured/Topfeature.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                                <div class="box-border">
+                    <img src="./images/featured/Topfeature.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>                <div class="box-border">
+                    <img src="./images/featured/Topfeature.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/featured/Topfeature.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                                <div class="box-border">
+                    <img src="./images/featured/Topfeature.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/featured/Topfeature.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                
+              </div>
+            </div>
+
+    </section>
+
+    <!-- New/Best -->
+    <section class="my-5 px-md-5 px-3">
+        <div class="row">
+            <div style="background: black;" class="col-md-3 text-warning">
+                <h3 style="border-bottom: 1px solid  lightgray;">New</h3>
+                <div class="d-flex flex-column">
+                    <div class="d-flex p-1">
+                        <img style="width: 90px; height: 65px;" src="./images/featured/feature3.jpg" alt="">
+                        <small class="px-2">Thai double bed sheet model-9875</small>
+                    </div>
+                    <div class="d-flex p-1">
+                        <img style="width: 90px; height: 65px;" src="./images/featured/feature3.jpg" alt="">
+                        <small class="px-2">Thai double bed sheet model-9875</small>
+                    </div>
+                    <div class="d-flex p-1">
+                        <img style="width: 90px; height: 65px;" src="./images/featured/feature3.jpg" alt="">
+                        <small class="px-2">Thai double bed sheet model-9875</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                    <h3 style="border-bottom: 1px solid  lightgray;">Best Sellers</h3>
+            
+                        <div class="py-1 ">
+                          <div class="Best-Collection">
+                            <div class="box-border">
+                                <img src="./images/Curtains/curtain2.jpg" alt="">
+                                <p>Bedding item-1212</p>
+                            </div>
+                            <div class="box-border">
+                                <img src="./images/Curtains/curtain2.jpg" alt="">
+                                <p>Bedding item-1212</p>
+                            </div>
+                                            <div class="box-border">
+                                <img src="./images/Curtains/curtain2.jpg" alt="">
+                                <p>Bedding item-1212</p>
+                            </div>                <div class="box-border">
+                                <img src="./images/Curtains/curtain2.jpg" alt="">
+                                <p>Bedding item-1212</p>
+                            </div>
+                            <div class="box-border">
+                                <img src="./images/Curtains/curtain2.jpg" alt="">
+                                <p>Bedding item-1212</p>
+                            </div>
+                                            <div class="box-border">
+                                <img src="./images/Curtains/curtain2.jpg" alt="">
+                                <p>Bedding item-1212</p>
+                            </div>
+                            <div class="box-border">
+                                <img src="./images/Curtains/curtain2.jpg" alt="">
+                                <p>Bedding item-1212</p>
+                            </div>                            
+                          </div>
+                        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featued -->
+    <section class="my-5 px-md-5 px-3">
+        <h3 style="border-bottom: 1px solid  lightgray;">Hand Made</h3>
+
+            <div class="py-1 ">
+                <div class="featured">
+                <div class="box-border">
+                    <img src="./images/handy.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/handy.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                                <div class="box-border">
+                    <img src="./images/handy.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>                <div class="box-border">
+                    <img src="./images/handy.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/handy.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                                <div class="box-border">
+                    <img src="./images/handy.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/handy.jpg" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                
+                </div>
+            </div>
+
+    </section>
+
+   <!-- Three boxes -->
+   <section class="px-md-5 px-3">
+    <div class="row ">
+        <div class="col-md-4 p-3">
+            <div class="threeBoxes">
+                <p>Cotton Febrics</p>
+                <img src="./images/HomeDecor.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-4 p-3">
+            <div class="threeBoxes">
+                <p>Bath & Towels</p>
+                <img src="./images/living.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-4 p-3">
+            <div class="threeBoxes">
+                <p>Kitchen Textiles</p>
+                <img src="./images/handMade.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Featued -->
+    <section class="my-5 px-md-5 px-3">
+        <h3 style="border-bottom: 1px solid  lightgray;">Cushions</h3>
+
+            <div class="py-1 ">
+              <div class="featured">
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src=".//images/cushion.png " alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                
+              </div>
+            </div>
+
+    </section>
+
+        <!-- Featued -->
+        <section class="my-5 px-md-5 px-3">
+            <h3 style="border-bottom: 1px solid  lightgray;">Curtains</h3>
+    
+                <div class="py-1 ">
+                  <div class="featured">
+                    <div class="box-border">
+                        <img src="./images/Curtains/curtain2.jpg" alt="">
+                        <p>Bedding item-1212</p>
+                    </div>
+                    <div class="box-border">
+                        <img src="./images/Curtains/curtain2.jpg" alt="">
+                        <p>Bedding item-1212</p>
+                    </div>
+                                    <div class="box-border">
+                        <img src="./images/Curtains/curtain2.jpg" alt="">
+                        <p>Bedding item-1212</p>
+                    </div>                <div class="box-border">
+                        <img src="./images/Curtains/curtain2.jpg" alt="">
+                        <p>Bedding item-1212</p>
+                    </div>
+                    <div class="box-border">
+                        <img src="./images/Curtains/curtain2.jpg" alt="">
+                        <p>Bedding item-1212</p>
+                    </div>
+                                    <div class="box-border">
+                        <img src="./images/Curtains/curtain2.jpg" alt="">
+                        <p>Bedding item-1212</p>
+                    </div>
+                    <div class="box-border">
+                        <img src="./images/Curtains/curtain2.jpg" alt="">
+                        <p>Bedding item-1212</p>
+                    </div>
+                    
+                  </div>
+                </div>
+    
+        </section>
+
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script 
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous">
+    </script>
+    <!-- Popper.JS -->
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" 
+        crossorigin="anonymous">
+        </script>
+    <!-- Slick min js     -->
+    <script src="./slick.min.js" ></script>  
+    <!-- Main Script -->
     <script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
             });
         });
+
+// featured items
+        $('.featured').slick({
+  dots: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: true,
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+         arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+         arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+$('.Best-Collection').slick({
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+         arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+         arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
     </script>
 </body>
 
