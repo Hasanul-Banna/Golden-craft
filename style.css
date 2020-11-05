@@ -222,12 +222,17 @@ ul.CTAs a {
     width: 100%;
     height: 85vh;
 }
-footer ul li {
+footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer  a{
     text-decoration: none;
-    list-style-type: none;
+    display: block;
     margin-bottom: 10px;
 } 
-footer ul li i {
+footer  i {
     color: goldenrod;
 }
 /* ---------------------------------------------------
