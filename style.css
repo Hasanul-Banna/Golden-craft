@@ -148,7 +148,7 @@ ul.CTAs a {
 #content {
     width: 100%;
     overflow: hidden;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     transition: all 0.3s;
 }
 .carousel-indicators li{
@@ -218,7 +218,18 @@ ul.CTAs a {
     width: 150px;
 }
 
-
+.Banner-Img{
+    width: 100%;
+    height: 85vh;
+}
+footer ul li {
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 10px;
+} 
+footer ul li i {
+    color: goldenrod;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -233,4 +244,15 @@ ul.CTAs a {
     #sidebarCollapse span {
         display: none;
     }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        /* align-items: stretch; */
+    }
+    .Banner-Img{
+        width: 100%;
+        height: 78vh;
+    }
 }
+
