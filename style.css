@@ -75,7 +75,7 @@ a:focus {
 
 #sidebar.active {
     margin-left: -250px;
-    /* display: none; */
+    transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
@@ -242,9 +242,11 @@ footer  i {
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
+        display: none;
     }
     #sidebar.active {
         margin-left: 0;
+        display: block;
     }
     #sidebarCollapse span {
         display: none;
@@ -257,7 +259,7 @@ footer  i {
     }
     .Banner-Img{
         width: 100%;
-        height: 78vh;
+        height: 40vh;
     }
 }
 
