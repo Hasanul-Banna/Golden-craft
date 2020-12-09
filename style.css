@@ -64,7 +64,15 @@ a:focus {
     width: 100%;
     align-items: stretch;
 }
-
+.bg-darkk{
+    background: rgba(0, 0, 0, 0.6);
+}
+.carousel-caption{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 30px;
+}
 #sidebar {
     min-width: 250px;
     background: #000;
@@ -164,7 +172,7 @@ ul.CTAs a {
 
 .threeBoxes img{
     width: 100%;
-    height:200px;
+    height:170px;
     position: relative;
     box-sizing: border-box;
 }
@@ -194,9 +202,10 @@ ul.CTAs a {
     color: gold;
     letter-spacing: 2px;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    width:100%;
+    margin-top: -10px;
+    text-align: center;
+   }
 
 .featured .box-border {
     border-right: .5px solid gray !important;

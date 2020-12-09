@@ -9,7 +9,11 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Slick css -->
+    <link rel="stylesheet" href="./slick.css">
+    <link rel="stylesheet" href="./slick-theme.css">
     <!-- Custom CSS -->
+    <link rel="shortcut icon" href="./clientLogo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
         #magnifying_area {
@@ -26,7 +30,7 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            cursor: zoom-in;
+            cursor: crosshair;
         }
     </style>
     <!-- Font Awesome JS -->
@@ -54,13 +58,13 @@
                         <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
+                        <a class="nav-link" href="./Product.html">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Deals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#">Reviews</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
@@ -82,7 +86,7 @@
             <ul class="list-unstyled components">
                 <li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Bed
-                        sheet</a>
+                        room</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
                             <a href="#"> type 1</a>
@@ -96,7 +100,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Hand Made</a>
+                    <a href="#">Living room</a>
                 </li>
                 <li>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Baby
@@ -114,19 +118,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Pillow</a>
-                </li>
-                <li>
-                    <a href="#">Ferbrics</a>
-                </li>
-                <li>
-                    <a href="#">Kitchen Febrics</a>
-                </li>
-                <li>
-                    <a href="#">Demo</a>
-                </li>
-                <li>
-                    <a href="#Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Demo
+                    <a href="#Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Kitchen
                         items</a>
                     <ul class="collapse list-unstyled" id="Submenu">
                         <li>
@@ -176,6 +168,47 @@
 
 
 
+    <!-- Featued -->
+    <section class="my-5 px-md-5 px-3">
+        <h3 style="border-bottom: 1px solid  lightgray;">Featured</h3>
+
+        <div class="py-1 ">
+            <div class="featured">
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src=".//images/cushion.png " alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
     <footer class="bg-light px-md-5 px-3">
         <div class="container">
             <div class="row py-3">
@@ -221,6 +254,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
         </script>
+    <!-- Slick min js     -->
+    <script src="./slick.min.js"></script>
     <!-- Main Script -->
     <script type="text/javascript">
         var magnifying_area = document.getElementById("magnifying_area");
@@ -240,8 +275,54 @@
 
         magnifying_area.addEventListener("mouseleave", function () {
             magnifying_img.style.transform = 'translate(-50%,-50%) scale(1)'
-        })
+        });
 
+        // featured items
+        $('.featured').slick({
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });       
     </script>
 </body>
 
