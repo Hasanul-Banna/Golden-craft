@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Golden Craft</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Slick css -->
+    <link rel="stylesheet" href="./slick.css">
+    <link rel="stylesheet" href="./slick-theme.css">
+    <!-- Custom CSS -->
+    <link rel="shortcut icon" href="./clientLogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #magnifying_area {
+            width: 100%;
+            height: 70vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #magnifying_img {
+            max-width: 100%;
+            min-width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            cursor: crosshair;
+        }
+    </style>
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/90113be503.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Home -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <img style="height: 50px;" src="./clientLogo.jpg" alt="">
+            <div class="d-flex">
+                <button type="button" id="sidebarCollapse" class="btn btn-warning d-md-none">
+                    <i>Categories</i>
+                </button>&nbsp;<button class="btn btn-warning d-inline-block d-lg-none ml-auto" type="button"
+                    data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper ">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="mb-3">
+            <div class="sidebar-header">
+                <h3>Categories</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Bed
+                        room</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#"> type 1</a>
+                        </li>
+                        <li>
+                            <a href="#">type 2</a>
+                        </li>
+                        <li>
+                            <a href="#">type 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Living room</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Baby
+                        items</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">type 1</a>
+                        </li>
+                        <li>
+                            <a href="#">type 2</a>
+                        </li>
+                        <li>
+                            <a href="#">type 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Kitchen
+                        items</a>
+                    <ul class="collapse list-unstyled" id="Submenu">
+                        <li>
+                            <a href="#">type 1</a>
+                        </li>
+                        <li>
+                            <a href="#">type 2</a>
+                        </li>
+                        <li>
+                            <a href="#">type 3</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- banner Content  -->
+        <div id="content">
+            <div class="container-fluid p-sm-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="magnifying_area">
+                            <img id="magnifying_img" src="./images/featured/Topfeature.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Product Name</h1>
+                        <small>Category : Bed Sheets</small> <br>
+                        <small>Model #1212</small> <br> <br>
+                        <i>Features</i> :
+                        <ul>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+
+
+
+    <!-- Featued -->
+    <section class="my-5 px-md-5 px-3">
+        <h3 style="border-bottom: 1px solid  lightgray;">Featured</h3>
+
+        <div class="py-1 ">
+            <div class="featured">
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src="./images/cushion.png" alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+                <div class="box-border">
+                    <img src=".//images/cushion.png " alt="">
+                    <p>Bedding item-1212</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="bg-light px-md-5 px-3">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-md-5">
+                    <!-- <h2>About us</h2> -->
+                    <img src="./logo.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officia corporis perspiciatis
+                        voluptas! Hic magnam pariatur possimus aperiam veniam inventore itaque est nostrum amet ipsa,
+                        distinctio corporis id minima laboriosam.</p>
+                    <p>&COPY; All rights reserved by Golden Craft</p>
+
+                </div>
+                <div class="col-md-3">
+                    <h5>Support</h5>
+                    <a href="#">FAQ</a>
+                    <a href="#">Help</a>
+                    <a href="#">Return policy</a>
+                    <a href="#">Terms & conditions</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact us</h5>
+                    <a href="#"><i class="fas fa-map-marker-alt "></i> Lorem ipsum dolor sit amet.</a>
+                    <a href="#"><i class="fas fa-phone-volume "></i> +880-1836-444445</a>
+                    <a href="#"><i class="fas fa-envelope "></i> goldencraft.ht@gmail.com</a>
+                    <a href="#"><i class="fab fa-facebook-f "></i> Facebook Page</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="background: black;color: goldenrod;text-align: center; letter-spacing: 3px;" class="py-1">
+        <i class="fas fa-laptop-code"></i> Developed by NGSOFTWORKS!
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+        </script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+        </script>
+    <!-- Slick min js     -->
+    <script src="./slick.min.js"></script>
+    <!-- Main Script -->
+    <script type="text/javascript">
+        var magnifying_area = document.getElementById("magnifying_area");
+        var magnifying_img = document.getElementById("magnifying_img");
+        magnifying_area.addEventListener("mousemove", function (event) {
+            clientX = event.clientX - magnifying_area.offsetLeft
+            clientY = event.clientY - magnifying_area.offsetTop
+
+            mWidth = magnifying_area.offsetWidth
+            mHeight = magnifying_area.offsetHeight
+
+            clientX = clientX / mWidth * 100
+            clientY = clientY / mHeight * 100
+
+            magnifying_img.style.transform = 'translate(-' + clientX + '% , -' + clientY + '%) scale(2)'
+        });
+
+        magnifying_area.addEventListener("mouseleave", function () {
+            magnifying_img.style.transform = 'translate(-50%,-50%) scale(1)'
+        });
+
+        // featured items
+        $('.featured').slick({
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });       
+    </script>
+</body>
+
+</html>
