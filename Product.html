@@ -161,7 +161,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <hr>
@@ -275,6 +274,12 @@
 
         magnifying_area.addEventListener("mouseleave", function () {
             magnifying_img.style.transform = 'translate(-50%,-50%) scale(1)'
+        });
+
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
         });
 
         // featured items
